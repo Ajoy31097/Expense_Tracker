@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMinder</title>
+    <link rel="stylesheet" href="Expense_tracker_style.css">
+</head>
+<body>
+    <h1 class="heading">MoneyMinder: Tracking your Expenses in perfect Harmony</h1>
+    <div class="container">
+        <div class="input-section">
+            <fieldset input-field="category-selector">
+                <legend>Category</legend>
+                <select name="category-selector" id="category-selector">
+                    <option value="Food & Beverage">Food & Beverage</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Trip & Vacation">Trip & Vacation</option>
+                </select>
+            </fieldset>
+            <fieldset input-field="description">
+                <legend>Description</legend>
+                <input type="text" name="description" id="description">
+            </fieldset>
+            <fieldset input-field="amount-selector">
+                <legend>Amount</legend>
+                <input type="number" name="amount-selector" id="amount-selector">
+            </fieldset>
+            <fieldset input-field="date">
+                <legend>Date</legend>
+                <input type="date" name="date" id="date">
+            </fieldset>
+        </div>
+        <div>
+            <button id="add-button"><b>Add Expense</b></button>
+        </div>
+        
+        <div class="container-table"> 
+            <div class="expense_list">
+                <h2>Expense List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Date & Time</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense_list_body">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="Expense_tracker_script.js"></script>
+</body>
+</html>
